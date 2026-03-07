@@ -227,6 +227,49 @@ footer{
   margin-top: auto;
 }
 
+.list{
+  list-style-type: disc;
+  margin: center;
+  font-size: 1rem;
+}
+
+.under-list{
+  list-style-type: circle;
+  margin-left: 0;
+  padding-left: 40px;
+  font-size: .9rem;
+  text-align: left;
+}
+
+.square-list{
+  list-style-type: square;
+  padding-left: 2rem;
+  font-size: 1rem;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.hover-underline{
+  text-decoration: underline;
+  cursor: help;
+}
+
+.hidden-text{
+  color: red;
+  visibility: hidden;
+}
+
+.hover-underline:hover + .hidden-text,
+.hover-underline:focus ~ .hidden-text{
+  visibility: visible;
+}
+
+.bold{
+  font-weight: bold;
+}
+
 @media (hover: hover){
   button:hover{
     opacity: 1;
